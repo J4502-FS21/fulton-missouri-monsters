@@ -73,3 +73,22 @@ a {
 a:hover {
   color: #FFFFFF;
 }
+
+.navcontainer li {
+ margin: 2px;
+ padding: 10px;
+}
+
+.navcontainer a {
+ text-decoration: none;
+ font-weight: bold;
+ font-style:normal;
+ text-transform: inherit;
+ color: white;
+ font-weight: 600;
+ font-size: 1em;
+}
+
+.navcontainer a:hover {
+ color: #FFFFFF;
+}
