@@ -29,6 +29,13 @@ h3 {
   color: #243319;
 }
 
+h4 {
+  font-family: 'Vollkorn', serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
 p {
   font-family: 'Vollkorn', serif;
   font-size: 16px;
