@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <title> Missouri Monsters</title>
@@ -13,8 +12,9 @@
   <link rel="stylesheet" href="styles.css"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-  <h1>Missouri Monsters</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1>Missouri Monsters</h1>
+</head>
 
 <body>
   <nav>
@@ -31,6 +31,42 @@
     From a bear-sized creature with glowing red eyes to hairy beast over 7-foot-tall.
   <br>
     This is the story of Missouri’s monsters.</p>
+
+    <div class="timer">
+    <body>
+        <p id="days"></p>
+        <p id="hours"></p>
+        <p id="mins"></p>
+        <p id="secs"></p>
+        <h2 id="end"></h2>
+        <script>
+        var countDownDate = new Date("Jul 25, 2021 16:37:52").getTime();
+
+        var myfunc = setInterval(function() {
+
+        var now = new Date().getTime();
+        var timeleft = countDownDate - now;
+
+        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days + "d "
+        document.getElementById("hours").innerHTML = hours + "h "
+        document.getElementById("mins").innerHTML = minutes + "m "
+        document.getElementById("secs").innerHTML = seconds + "s "
+
+        if (timeleft < 0) {
+            clearInterval(myfunc);
+            document.getElementById("days").innerHTML = ""
+            document.getElementById("hours").innerHTML = ""
+            document.getElementById("mins").innerHTML = ""
+            document.getElementById("secs").innerHTML = ""
+            document.getElementById("end").innerHTML = "BOO!!";
+        }
+        }, 1000);
+        </script>
 
 </body>
 </html>

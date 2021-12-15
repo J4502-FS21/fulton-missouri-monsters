@@ -56,33 +56,29 @@
   <p>Click on the images below:</p>
 </div>
 
-<div class="row">
-  <div class="column">
-    <img src="hellcat.jpg" alt="Nature" style="width:10%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="momo.jpg" alt="Snow" style="width:10%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-</div>
 
-<div class="containerss">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:40%">
-  <div id="imgtext"></div>
-</div>
+<section class="imageGallery" id="myGallery">
+	<section class="imageHolder hideThisDiv">
+    <img src="momo.jpg" alt="A pencil drawing of a hairy beast with red eyes, known as Momo the Monster.'">
+    <figcaption>A drawing of Momo the Monster.</figcaption>
+	</section>
+	<section class="imageHolder hideThisDiv">
+    <img src="hellcat.jpg" alt="A pencil drawing of a wolf-like beast on all fours with glowing red eyes.'">
+    <figcaption>A drawing of the Nixa Hellcat.</figcaption>
+	</section>
+	<section class="imageHolder hideThisDiv">
+    <img src="ozark.jpg" alt="A pencil drawing of a deer-like beast on all fours with glowing red eyes and antlers.'">
+    <figcaption>A drawing of the Ozark Howler.</figcaption>
+  </section>
+	</section>
+  <section class="button_holder">
+		<button id="button_previous">Previous</button>
+		<button id="button_random">Random</button>
+		<button id="button_next">Next</button>
+	</section>
+</section>
 
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
