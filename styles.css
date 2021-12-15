@@ -11,14 +11,14 @@ h1 {
   font-family: 'Creepster', sans-serif;
   font-weight: 700;
   font-size: 90px;
-  color: #58100D;
+  color: #9b1c17;
 }
 
 h2 {
   font-family: 'Creepster', sans-serif;
   font-weight: 300;
   font-size: 60px;
-  color: #243319;
+  color: #DFFF00;
 }
 
 h3 {
@@ -26,7 +26,7 @@ h3 {
   font-weight: 400;
   font-size: 40px;
   font-weight: bold;
-  color: #243319;
+  color: #7B8475;
 }
 
 h4 {
@@ -43,7 +43,7 @@ p {
 }
 
 nav {
-  background: #58100D;
+  background: #9b1c17;
 }
 
 ul {
@@ -92,3 +92,50 @@ a:hover {
 .navcontainer a:hover {
  color: #FFFFFF;
 }
+
+.container {
+  border: 1px solid white;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 625px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  text-align: center;
+  justify-content: center;
+}
+
+.containers {
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 625px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+@media (min-width: 850px) {
+
+  .flex-container1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+  }

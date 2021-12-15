@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title> Missouri Monsters</title>
+  <title> Guide to Missouri Monsters</title>
   <meta charset="utf-8">
   <meta name="description" content="Alex Fulton's final website.">
   <meta name="author" content="Alex Fulton">
@@ -19,13 +19,73 @@
 <body>
   <nav>
     <ul>
-      <li><a href="website.html">Home</a><li>
+      <li><a href="index.html">Home</a><li>
       <li><a href="guide.html">Guide to Monsters</a></li>
       <li><a href="map.html">Map of Monsters</a></li>
-      <li><a href="faq.html">FAQ on Sightings</a></li>
     </ul>
   </nav>
 
   <h2>Guide to Monsters</h2>
   <h3>By Alex Fulton</h3>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <div class="flex-container">
+  <div class="container">
+  <h3>Momo the Monster</h3>
+  <p>Otherwise known as the Missouri Monster, Momo is 7 foot-tall, covered in dark hair that emits an awful stench. The most famous sighting took place on July 11, 1972. Two young boys were playing in their backyard one day and their older sister heard a scream. She looked out the window and saw a dark-haired man-like creature holding what looked like a deceased dog. </p>
+  <br>
+  <p> Following the sighting, more people reported seeing Momo along the Mississippi River. Eventually, a 20-person squadron was even formed to kill the monster, but he was never found. Those who have seen Momo claim he lets out a horrendous low growl and his fur is so shaggy it covers his face. </p>
+  </div>
+  <div class="container">
+  <h3>The Ozark Howler</h3>
+  <p>Described as a large bear-sized monster with glowing red eyes and prominent horns, the Ozark Howler is believed to be an omen of death. The creature is most well known for its horrifying cry, described as a mix of a wolf’s howl, an elk’s bugle and the laugh of a hyena. </p>
+  <br>
+  <p>The first known sighting of the Ozark Howler took place in the early 1800s between the creature and Daniel Boone. According to the legend, Boone shot the monster, but it’s unclear whether he kept it as a trophy.</p>
+  </div>
+  <div class="container">
+  <h3>The Nixa Hellhound</h3>
+  <p>Also known as the “Booger Dog,” the Nixa Hellhound gained notoriety when somebody called a Springfield radio station claiming they had seen the creature roaming around Nixa. One person who has seen it, claims the beast looks like a mix of a deer and a dog. Others have described the Nixa Hellhound as a hybrid fox/wolfman.</p>
+  </div>
+</div>
+
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>View the Monsters!</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
